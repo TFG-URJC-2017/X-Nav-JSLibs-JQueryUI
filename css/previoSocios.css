@@ -25,6 +25,10 @@ h2{
     width:auto;
     height:100%;
     background-color:gray;   
+     z-index:20;    
+}
+#password{
+    z-index:200; 
 }
 #socios{
      background:url("../img/Lattice.png  ");
@@ -36,6 +40,7 @@ h2{
 #sociosBar,#confBar{
      height:100%;
      background-color:gainsboro;
+     z-index:200;
 }
 #profile, #group, #config, #custom, #secure, #back{
     height:28%;
@@ -88,6 +93,31 @@ img{
     padding: 0.2em 0.2em 0;
     width: 1060px;
 }
-#actualizaciones{
-height:100%    
+#actualizaciones,#mensajesPanel,#profilePanel,#groupPanel,#customPanel,#securePanel{
+    top:70px;
+    left:230px;
+    position: absolute;
+    height:100%; 
+    z-index:-1;
+    background:url("../img/Lattice.png  ");
+}
+#customPanel,#securePanel{
+    background:url("../img/wireball.png");
+}
+#mensajesNPanel,#mensajesVPanel{
+    height:45%;
+    background-color:#FF3300;    
+    overflow-y: scroll;
+}
+
+#chat{
+     background-color:green; 
+     height:100%;
+     float:right;
+}
+#toChat{
+    height:400px;
+}
+#textChat{
+    height:90px;
 }

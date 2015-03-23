@@ -67,8 +67,8 @@ function canvasApp(){
     function mouse_moved(ev) {
 	  var x, y;	
 	  // Get the mouse position in the canvas
-	  x = ev.pageX-theCanvas.offsetLeft-242;
-	  y = ev.pageY-theCanvas.offsetTop-133;  
+	  x = ev.pageX-theCanvas.offsetLeft-244;
+	  y = ev.pageY-theCanvas.offsetTop-135;  
 
 	  if (begin_drawing) {
 	    context.beginPath();

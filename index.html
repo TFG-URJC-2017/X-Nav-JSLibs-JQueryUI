@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>previosocios</title> 
+		<title>Socios</title> 
         <link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css">    
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -13,19 +13,20 @@
 	</head>
 	<body>
         <div id="password">
-            <button class="col-lg-12 text-center" onclick="location.href = '#socios';"><img src="img/go-back-icon.png" alt="volver a la pantalla principal"></img></button>
+             <h1>SOCIOS</h1>
+            <button class="col-lg-12 text-center" onclick="sociosToFg();location.href = '#socios';"><img src="img/keyring-icon.png" alt="volver a la pantalla principal"></img></button>
         </div>    
         <div id="socios">
             <div id="sociosBar" class="col-lg-2 text-center">
                 <h1>SOCIOS</h1>
-                <button id="profile" class="col-lg-12 text-center"><img src="img/profile-icon.png" alt="personalizacion"></button>
-                <button id="group" class="col-lg-12 text-center"><img src="img/profile-group-icon.png" alt="seguridad"></img></button>
-                <button id="config" class="col-lg-12 text-center" onclick="location.href = '#conf';"><img src="img/cog-icon.png" alt="volver a la pantalla principal"></img></button>
+                <button id="profile" class="col-lg-12 text-center" onclick="alert('perfil no implementado');"><img src="img/profile-icon.png" alt="personalizacion"></button>
+                <button id="group" class="col-lg-12 text-center" onclick="alert('grupo no implementado');"><img src="img/profile-group-icon.png" alt="seguridad"></img></button>
+                <button id="config" class="col-lg-12 text-center" onclick="sociosToBg();location.href = '#conf';"><img src="img/cog-icon.png" alt="volver a la pantalla principal"></img></button>
             </div>
              <div id="info" class="col-lg-10 text-center">
                 <div id="avisos" class="text-right">
                     <p id="avisos1" class="text-left"><i class="fa fa-envelope"></i>:3</p>
-                    <p id="avisos2" class="text-left"><i class="fa fa-comments"></i>:1</p>
+                    <p id="avisos2" class="text-left"><i class="fa fa-comments"></i>:2</p>
                     <p id="avisos3" class="text-left"><i class="fa fa-briefcase"></i>:2</p>
                 </div>
                 <h1>SOCIOS</h1>  
@@ -64,6 +65,23 @@
                     </div>
                 </div>
             </div>    
+            <div id="mensajesPanel" class="col-lg-6 text-center">
+                <div id="mensajesNPanel" class="col-lg-12 text-center">
+                    <h2>Mensajes nuevos</h2>
+                     <div id="tabs-n" class="col-lg-12 text-center"></div>
+                </div>
+                <div id="mensajesVPanel" class="col-lg-12 text-center">
+                    <h2>Mensajes viejos</h2>
+                    <div id="tabs-v" class="col-lg-12 text-center"></div>
+                </div>    
+            </div>
+            <div id="chat" class="col-lg-4 text-center">
+                <p class="col-lg-2 text-left"> texto:</p><input id="toChat" class="col-lg-12 text-center"></input>
+                <p class="col-lg-2 text-left"> para:</p>
+                <input id="#textChat" class="col-lg-12 text-center autocomplete"></input>
+                <button class="col-lg-12 text-center" onclick="alert('no implementado send')"><i class="fa fa-comments-o"></i>
+</button>
+            </div>
             <div id="profilePanel" class="col-lg-10 text-center">
                 <h2>MI PERFIL</h2>
             </div>
@@ -74,9 +92,9 @@
         <div id="conf">
             <div id="confBar" class="col-lg-2 text-center">
                 <h1>SOCIOS</h1>
-                <button id="custom" class="col-lg-12 text-center"><img src="img/mixer-icon.png" alt="personalizacion"></button>
-                <button id="secure" class="col-lg-12 text-center"><img src="img/shield-icon.png" alt="seguridad"></img></button>
-                <button id="back" class="col-lg-12 text-center" onclick="location.href = '#socios';"><img src="img/go-back-icon.png" alt="volver a la pantalla principal"></img></button>
+                <button id="custom" class="col-lg-12 text-center" onclick="alert('personalización no implementada');"><img src="img/mixer-icon.png" alt="personalizacion"></button>
+                <button id="secure" class="col-lg-12 text-center" onclick="alert('seguridad no implementada');"><img src="img/shield-icon.png" alt="seguridad"></img></button>
+                <button id="back" class="col-lg-12 text-center" onclick="sociosToFg();location.href = '#socios';"><img src="img/go-back-icon.png" alt="volver a la pantalla principal"></img></button>
             </div>
             <div id="confPanel" class="col-lg-10 text-center">
                 <h2>CONFIGURACIÓN</h2>
